@@ -45,5 +45,5 @@ Full queries are available in [`SQLPROJECT.sql`](SQLPROJECT.sql).
 - `data/` — the 4 normalized CSV files
 
 ## Author
-Sahara Bangkit 
+Sahara Bangkit |
 saharabangkit.work@gmail.com
