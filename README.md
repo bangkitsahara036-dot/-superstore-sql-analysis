@@ -46,5 +46,4 @@ Full queries are available in [`SQLPROJECT.sql`](SQLPROJECT.sql).
 
 ## Author
 Sahara Bangkit 
-[Your Name] — Final-year Statistics student
-[LinkedIn] · [Email]
+saharabangkit.work@gmail.com
