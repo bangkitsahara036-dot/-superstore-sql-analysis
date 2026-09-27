@@ -18,7 +18,6 @@ The flat dataset was split into 4 relational tables to eliminate data redundancy
 | `Orders` | 5,009 | PK: `OrderID`, FK: `CustomerID` |
 | `OrderDetails` | 9,994 | FK: `OrderID`, `ProductID` (fact table) |
 
-![ERD Diagram](images/erd_diagram.png)
 
 **Design note:** Shipping address (City, State, Region) was found to be an **order-level attribute**, not a customer-level one — 780 out of 793 customers shipped to more than one city. This was placed in the `Orders` table rather than `Customers`, following normalization principles.
 
@@ -33,19 +32,19 @@ The flat dataset was split into 4 relational tables to eliminate data redundancy
 Full queries are available in [`SQLPROJECT.sql`](SQLPROJECT.sql).
 
 ## Key Findings
-- **Shipping:** Same Day delivery is fastest; Standard Class takes the longest on average — showing a clear speed-vs-cost trade-off across ship modes.
-- **Profitability:** [add top category/sub-category from your query results]
-- **Customer:** [add top customer name and top segment from your query results]
-- **Trend:** Sales show a clear seasonal pattern, peaking toward the end of the year (Nov–Dec) — consistent with year-end holiday shopping behavior.
+- Profitability: Technology with $145,454 Total Profit
+- Shipping: Same Day is fastest (~0 days), Standard Class takes longest (~5 days)
+- Customer: Tamara generated the highest individual profit (~$8,981); the Consumer segment contributed the most profit overall.
+- Trend: Sales show a clear seasonal pattern, peaking in November-December — likely driven by year-end holiday shopping.
 
 ## Tools
 - Microsoft SQL Server / SSMS
-- T-SQL (window functions, CTEs, aggregations, multi-table joins)
 
 ## Files
 - `SQLPROJECT.sql` — table queries and 13 business-question analyses
 - `data/` — the 4 normalized CSV files
 
 ## Author
+Sahara Bangkit 
 [Your Name] — Final-year Statistics student
 [LinkedIn] · [Email]
